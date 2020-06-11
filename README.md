@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-To get started, you'll need a few things installed and set up. This should be quick. 
+To get started, you'll need a few things installed and set up. This should be quick.
 
 1. QuestDB: To install Questdb you can see [Installation](https://questdb.io/getstarted) for complete instructions in case you want to use Docker, or `brew` on MacOS, but the easiest way is to download the binaries and run it directly. Instructions for that are [Here](https://questdb.io/docs/guideBinaries).
 2. Jupyter Notebooks: That's what this is. To run it, you should:
@@ -10,14 +10,14 @@ To get started, you'll need a few things installed and set up. This should be qu
     2. make sure that the libraries we use in this tutorial are also installed with `pip3 install matplotlib pandas`
     3. clone this repository (`git clone https://github.com/davidgs/QuestNotebook`)
     4. in the repository directory run `jupyter notebook`
-   
+
 That will get you right back to a page like this that is interactive, allowing you to run the code and interact with the database yourself.
 
 ## Create A Database
 
 We will need someplace to store our data, so let's create a test database where we can put some random data.
 
-We will create a simple table with 5 columns, one of which is a `timestamp` 
+We will create a simple table with 5 columns, one of which is a `timestamp`
 
 The Create operation in QuestDB appends records to bottom of a table. If the table has a designated `timestamp`, new record timestamps must be superior or equal to the latest timestamp. Attempts to add a timestamp in middle of a table will result in a timestamp out of order error.
 
@@ -40,7 +40,7 @@ print(r.status_code)
 
 ## Generate some Data
 
-Since we have a new setup, we should add some data to QuestDB so that we can have something to query. We will add some random data, for now. 
+Since we have a new setup, we should add some data to QuestDB so that we can have something to query. We will add some random data, for now.
 
 
 
@@ -63,11 +63,11 @@ for x in range(100):
         success += 1
     else:
         fail += 1
-    
+
 print("Rows inserted: " + str(success))
 if fail > 0:
     print("Rows Failed: " + str(fail))
-    
+
 ```
 
 ## Query Data from QuestDB
@@ -127,7 +127,5 @@ rawData.plot("timestamp", ["balance"], subplots=True)
 
 ```
 
+![png](output_13_1.png)
 
-```python
-
-```
