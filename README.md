@@ -1,5 +1,17 @@
 # QuestDB Tutorial for Python
 
+## Getting Started
+
+To get started, you'll need a few things installed and set up. This should be quick. 
+
+1. QuestDB: To install Questdb you can see [Installation](https://questdb.io/getstarted) for complete instructions in case you want to use Docker, or `brew` on MacOS, but the easiest way is to download the binaries and run it directly. Instructions for that are [Here](https://questdb.io/docs/guideBinaries).
+2. Jupyter Notebooks: That's what this is. To run it, you should:
+    1. install Jupyter Notebooks with `pip3 install --upgrade ipython jupyter`
+    2. make sure that the libraries we use in this tutorial are also installed with `pip3 install matplotlib pandas`
+    3. clone this repository, and in the repository directory run `jupyter notebook`
+   
+That will get you right back to a page like this that is interactive, allowing you to run the code and interact with the database yourself.
+
 ## Create A Database
 
 We will need someplace to store our data, so let's create a test database where we can put some random data.
