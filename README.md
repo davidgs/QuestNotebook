@@ -8,7 +8,8 @@ To get started, you'll need a few things installed and set up. This should be qu
 2. Jupyter Notebooks: That's what this is. To run it, you should:
     1. install Jupyter Notebooks with `pip3 install --upgrade ipython jupyter`
     2. make sure that the libraries we use in this tutorial are also installed with `pip3 install matplotlib pandas`
-    3. clone this repository, and in the repository directory run `jupyter notebook`
+    3. clone this repository (`git clone https://github.com/davidgs/QuestNotebook`)
+    4. in the repository directory run `jupyter notebook`
    
 That will get you right back to a page like this that is interactive, allowing you to run the code and interact with the database yourself.
 
