@@ -157,6 +157,7 @@ rawData.plot("timestamp", ["balance"], subplots=True)
 
 
 ```
+![graph](img/output.png)
 
 ## Clean up
 
@@ -170,4 +171,3 @@ if r.status_code == 200:
 else:
         print("Database Table not Dropped: " + str(r.status_code))
 ```
-![graph](img/output.png)
